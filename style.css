@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+  
+    background-color:#FFFF00;
+   // color:white;
+    
+}
+.logosnap i{
+    color:black;
+    font-size: 25px;
+    //b
+  
+}
+
+
+nav{
+    position: relative;
+    padding: 1rem 2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 ,.nav3{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.listmenu1 {
+    display: none;
+    //background-color: aqua;
+}
+
+
+.search{
+    display: flex;
+    gap: 1rem;
+    border-radius:20px ;
+   padding: 0.5rem;
+   background-color: white;
+   width:65%;
+
+}
+input[type='search']{
+  //  background:transparent;
+    border: none;
+    width:100%;
+}
+
+::placeholder{
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: gray;
+}
+
+.nav2{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.mainmobil{
+    display: none;
+}
+
+.menu i{
+
+     background-color: white;
+     padding: 0.7rem;
+     border-radius: 50%;
+    
+   
+}
+
+.nav3 h5{
+    display: none;
+}
+
+
+.ads,.download,.downloadmobil{
+    background-color: black;
+    color: white;
+    padding:  0.6rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size:13px;
+
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons p{
+    font-size: 0.2rem;
+}
+
+.chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+    width:50%;
+    font-weight: bold;
+    background: black;
+
+    background-color: black;
+    color: white;
+    padding:  0.6rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size:13px;
+
+}
+.chat i{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.microsoft{
+
+    background-color: black;
+    color: white;
+    padding:  0.6rem;
+    border: none;
+    
+    font-weight: normal;
+   // text-transform:none;
+    font-size:13px;
+
+    margin:auto;
+
+    display: flex;
+    justify-content: center;
+  //  align-items: center;
+    border-radius:5px;
+    gap:0rem;
+   // padding-left:1rem ;
+  //  padding-right:1rem;
+   // background-color: blue;
+  width:30%;
+}
+.microsoft h5{
+    padding:0;
+    margin: 0;
+    background: black;
+    width: 70px;
+    justify-content: left;
+   // font-size:20px;
+  //  text-transform: normal;
+
+}
+
+main
+{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+   
+   // 
+}
+.title{
+  //  background-color: green;
+    margin-top:0;
+}
+
+
+.title h1{
+    font-size: 4.5rem;
+    font-weight: normal;
+}
+
+.title p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.imagediv{
+   // height:70vh;
+  //  width: 50%;
+   // background: blue;
+}
+main img{
+  //  background-color: blue;
+   // display: flex;
+    margin-top:0;
+    padding-top:0px;
+   // height:500px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color:black;
+    background: white;
+    padding:1.5rem 5rem;
+    font-size:16px;
+}
+.footer1 ,.footer2{
+    display:flex;
+    flex-direction: column;
+    gap:0.3rem;
+ }
+.footer2{
+  // background:red;
+  //  width:30%;
+}
+footer li{
+ //  text-decoration: none;
+    list-style-type: none;
+   // background: red;
+}
+
+.bottomgreybar{
+    display: flex;
+    justify-content: left;
+    padding: 1rem 5rem;
+    font-size: 14px;
+    gap:3rem;
+    color:white;
+    background: #424242;
+    margin-bottom:3rem;
+  //  height: 3rem;
+   // width:100%;
+}
+.bottombar{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    gap:1rem;
+    align-items: center;
+    height: 3rem;
+    width:100%;
+  //  padding-top:0.3rem;
+   // padding-bottom: 1rem;
+
+    //margin: 2rem auto;
+}
+
+.bottombar a{
+    color:#FFFF00;
+}
+
+
+@media only screen and (max-width:600px)
+{
+    .nav3 h5{
+        display: inline;
+    }
+
+    .nav1{
+        gap:0.3rem;
+    }
+
+    .listmenu1{
+        display:inline;
+       //background-color: blue;
+    }
+
+    .listmenu1 i{
+        font-weight:large;
+         font-size: 25px;
+     }
+
+    
+
+    .search{
+        //background-color: red;
+    }
+
+    .ads,.download,.search-bar,.menu{
+        display: none;
+    }
+
+
+
+    .nav2{
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        width: 100%;
+        margin-left: -32px;
+        justify-content: center;
+        padding: 1.5rem 0;
+        z-index: 2;
+     //   display: none;
+    }
+    
+
+    .logosnap i{
+        //background-color: white;
+        padding: 0.7rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+
+    .mainmobil{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1.2rem;
+        margin-top:4rem;
+        margin-bottom:6rem;
+    }
+
+    .mainmobil p{
+        text-align: center;
+        font-size: 17px;
+        color:black;
+       // font-weight: bold;
+    }
+
+    .video-container{
+       width:100%; 
+       height:350px;
+       position: relative;
+     
+      }
+
+    .mainmobil video{
+      width: 100%;
+      height: 350px;
+      border-radius: 20px;
+      object-fit: cover;
+       
+    }
+
+    .onvideo{
+        background-color: yellow;
+        position: absolute;
+        z-index: 1;
+        left:50% ;
+        top: 50vh;
+        transform: translate(-50%,-50%);
+        color:black;
+        border:none;
+        padding: 0.7rem 1rem;
+        border-radius: 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .title ,.imagediv{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+    
+    .bottomgreybar,.bottombar{
+        display: none;
+    }
+
+
+    
+    
+
+}
